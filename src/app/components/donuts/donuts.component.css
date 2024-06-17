@@ -1,0 +1,13 @@
+table {
+    width: 80%;
+    margin: auto;
+}
+
+img{
+    padding: 0;
+    border-radius: 4px;
+}
+
+a {
+    border-radius: 4px;
+}

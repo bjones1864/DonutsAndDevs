@@ -1,0 +1,16 @@
+<h2 class="text-center">Donuts</h2>
+
+<table id="donutTable" class="table">
+    <tr>
+        <th class="col">Name</th>
+        <th class="col">Photo</th>
+        <th class="col">Photo Attribution</th>
+    </tr>
+    @for(d of donutResult.results; track $index){
+        <tr>
+            <td>{{ d.name }}</td>
+            <td><img src="{{ d.photo }}" height="128px" /></td>
+            <td><a href="{{ d.photo_attribution}}" class="btn btn-info">Source</a></td>
+        </tr>
+    }
+</table>
