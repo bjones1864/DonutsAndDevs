@@ -8,11 +8,6 @@
         <th>Year</th>
     </tr>
     @for(d of devResult.complete; track $index){
-        <tr>
-            <td>{{ d.firstName }}</td>
-            <td>{{ d.lastName }}</td>
-            <td>{{ d.innovation }}</td>
-            <td>{{ d.year }}</td>
-        </tr>
+        <tr app-dev-row [displayDev]="d"></tr>
     }
 </table>
